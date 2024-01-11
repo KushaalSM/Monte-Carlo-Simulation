@@ -9,7 +9,7 @@ def get_uniform_samples(lower, upper, number_of_samples):
 def get_gaussian_samples(mean, stdev, number_of_samples):
     if number_of_samples == 1:
         return np.random.normal(mean, stdev)
-    return np.random.uniform(mean, stdev, size=number_of_samples)
+    return np.random.normal(mean, stdev, size=number_of_samples)
 
 def get_2D_quasi_uniform_samples(low, high, number_of_samples, number_of_blocks):
     block_size = (high - low) / np.sqrt(number_of_blocks)
